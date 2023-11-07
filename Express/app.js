@@ -90,7 +90,7 @@ app.get('/', function (req, res) {
     res.send("Hello Everyone Good Day!!")
 })
 
-app.get("/getMovies", (req, res)=> {
+app.get("/movies", (req, res)=> {
   fs.readFile("./movies.json",(err, result)=>{
     if(err){
         console.log(err)
